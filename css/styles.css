@@ -100,12 +100,26 @@ body {
     font-weight: 500;
     letter-spacing: 0.02em;
     color: #2e2f42;
-    padding: 
+    position: relative; 
 }
 .link:hover,
 .link:focus {
     color: #404bbf;
 }
+
+.current-page:hover::after,
+.current-page:focus::after {
+    color: #404bbf;
+    background-color: #404BBF;
+    width: 48px;
+    height: 4px;
+    border-radius: 2px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    content: '';
+}
+
 .contact-list {
     font-style: normal;
 }
@@ -120,6 +134,15 @@ body {
 .hero-section{
     background-color: #2e2f42;
     padding: 188px 0;
+    background-image: 
+    linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.70),
+        rgba(46, 47, 66, 0.70)),
+    url(../images/hero-image.jpg);
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover;
     }
   
  .hero-section .section-title {
@@ -172,6 +195,7 @@ body {
     gap: 24px;
 
 }
+
 .features-menu-item {
     width: calc((100% - 72px) / 4);
 }
@@ -187,8 +211,16 @@ body {
     color: #2e2f42;
     margin-bottom: 8px;
 }
+   
 .description {
     letter-spacing: 0.02em;
+}
+.icon {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+ 
+
 }
 .our-team-section {
     background-color: #F4F4FD;
