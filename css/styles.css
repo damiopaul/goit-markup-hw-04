@@ -222,6 +222,9 @@ body {
  
 
 }
+.social-icons {
+    display: flex;
+}
 .our-team-section {
     background-color: #F4F4FD;
     padding: 120px 0;
