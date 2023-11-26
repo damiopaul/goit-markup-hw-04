@@ -238,6 +238,12 @@ body {
 }
 .social-icons {
     display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+.icon {
+    width: 40px;
+    height: 40px;
 }
 .our-team-section {
     background-color: #F4F4FD;
